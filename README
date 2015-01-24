@@ -1,0 +1,14 @@
+utf8console
+
+DESCRIPTION: 
+
+utf8console is a Python 3 package that makes it easy to enable a Python console application to print Unicode text under Microsoft Windows.
+The idea is to change the terminal's codepage with the SetConsoleOutputCP() Winapi function at startup to cp65001 and force Python's stdout to use UTF-8.
+
+USAGE:
+
+simply add this line at the beginning of your source:
+
+    import utf8console
+
+That's it. From that point it's enough to use the built-in print() function to print unicode text.
